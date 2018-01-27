@@ -66,7 +66,7 @@ nav{
   display: hidden;
   width: 40px;
   height: 40px;
-  background: url(nav.png) no-repeat center;
+  background: url(nav.png) center;
 }
 a:hover#menu-icon{
   border-radius: 4px 4px 0 0;
@@ -229,3 +229,76 @@ footer{
 }
 
 /*----------------MEDIA QUERIES--------*/
+
+@media screen and (max-width: 768px) {
+  h2{
+    font-size: 150%;
+  }
+  h3{
+    font-size:125%;
+  }
+  p{
+    font-size:120%;
+  }
+  header{
+    position: absolute;
+  }
+  #logo{
+    margin: 15px 0 20px -25px;
+    background: url(RD_mobile.png) no-repeat center;
+  }
+  #menu-icon{
+    display: inline-block;
+  }
+  nav ul, nav:active ul{
+    display: none;
+    z-index: 1000;
+    position: absolute;
+    padding: 20px;
+    background: #6991AC;
+    right: 20px;
+    top:60px;
+    border:1px solid #FFF;
+    border-radius: 10px 0 10px 10px;
+    width:35%;
+    }
+  nav:hover ul{
+    display: block;
+  }
+  nav li{
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+  }
+  .banner{
+    padding-top: 87px;
+  }
+  .one-fourth{
+    float: left;
+    width: 100%;
+  }
+  .one-fourth i{
+    font-size:350%;
+    padding:4% 0 1% 0;
+  }
+  .tablet, .mobile, .desktop{
+    width: 100%;
+    float: left;
+  }
+ #tablet_text{
+   float:left;
+   width: 100%;
+   text-align: center;
+ }
+ .one-third{
+   width: 100%;
+   float:left;
+   text-align: center;
+ }
+ #hand_mobile{
+   display: none;
+ }
+ .social i{
+   font-size: 180%;
+ }
+}
